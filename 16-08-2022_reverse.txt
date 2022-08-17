@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int i=0,j,a[20],f,n,k;
+	scanf("%d",&n);
+	while(i<n)
+	{
+		scanf("%d",&a[i]); 
+	i++;
+	}
+	for(i=n;i>0;i--)
+	{
+		f=0;
+		for(j=2;j<a[i];j++)
+		{
+			if(a[i]%j==0)
+			{
+				f=1;
+				break;
+			}
+		}
+		if(f==0&&a[i]!=0 )
+		{
+			
+			printf("%d\t",a[i]);
+		}
+	}
+}
