@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+int main()
+{
+	int i,c=0,cc=0,ccc=0;
+	char s[100];
+	gets(s);
+for(i=0;s[i]!='\0';i++)
+	{
+		if(isupper(s[i]))
+		{
+			c++;
+		}
+		if(islower(s[i]))
+		{
+		    cc++;
+		}
+		if(isdigit(s[i]))
+		{
+		    ccc++;
+		}
+	}
+	printf("%d",c);
+	printf("%d",cc);
+	printf("%d",ccc);
+}
